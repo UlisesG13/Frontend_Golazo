@@ -1,1 +1,46 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset y estilos globales mínimos para evitar espacios y overflow */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000; /* fondo negro por defecto */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* imágenes: evitar que desborden horizontalmente */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para scroll horizontal suave */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Scroll suave global */
+html {
+  scroll-behavior: smooth;
+}

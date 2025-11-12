@@ -1,7 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* Allow the app root to fill the full viewport width so full-bleed
+     sections (like the Hero) can span edge-to-edge. Removing the fixed
+     max-width and padding avoids the black bars at the sides. */
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
