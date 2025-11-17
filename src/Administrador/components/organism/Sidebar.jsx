@@ -17,7 +17,7 @@ import SidebarLink from '../molecule/SidebarLink.jsx';
 // Estos 'href' deben coincidir con las rutas que definiste en App.jsx
 const sidebarLinks = [
   { icon: <LayoutDashboard size={20} />, label: 'Dashboard', href: '/admin' },
-  { icon: <Package size={20} />, label: 'Gestión de productos', href: '/admin/products' },
+  { icon: <Package size={20} />, label: 'Gestión de productos', href: '/admin/productos' },
   { icon: <ShoppingCart size={20} />, label: 'Pedidos', href: '/admin/pedidos' }, // (Añade esta ruta en App.jsx cuando la crees)
   { icon: <Users size={20} />, label: 'Clientes', href: '/admin/clientes' }, // (Añade esta ruta en App.jsx cuando la crees)
   { icon: <BarChart3 size={20} />, label: 'Reportes', href: '/admin/reportes' }, // (Añade esta ruta en App.jsx cuando la crees)
