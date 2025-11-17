@@ -4,6 +4,7 @@ import LandingPage from './Shared/pages/LandingPage';
 import AdminDashboard from './Administrador/pages/AdminDashboard';
 import ProductManagementPage from './Administrador/pages/ProductManagement.jsx';
 import OrdersPage from './Administrador/pages/OrdersPage.jsx';
+import PromotionsPage from './Administrador/pages/PromotionsPage.jsx';  
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
 
         {/* Ruta para la gestión de pedidos */}
         <Route path="/admin/pedidos" element={<OrdersPage />} />
+
+        {/* Ruta para la gestión de promociones */}
+        <Route path="/admin/promociones" element={<PromotionsPage />} />
       </Routes>
     </BrowserRouter>
   );

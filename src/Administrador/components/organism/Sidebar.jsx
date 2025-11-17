@@ -6,7 +6,8 @@ import {
   Users, 
   BarChart3, 
   Settings, 
-  LogOut 
+  LogOut, 
+  Ticket 
 } from 'lucide-react';
 // OJO: Revisa que esta ruta a tu logo sea correcta (vi 'Logos.jsx' en un error anterior)
 // --- CORREGIDO: Cambiado de 'Logo.jsx' a 'Logos.jsx' ---
@@ -19,6 +20,7 @@ const sidebarLinks = [
   { icon: <LayoutDashboard size={20} />, label: 'Dashboard', href: '/admin' },
   { icon: <Package size={20} />, label: 'Gestión de productos', href: '/admin/productos' },
   { icon: <ShoppingCart size={20} />, label: 'Pedidos', href: '/admin/pedidos' }, // (Añade esta ruta en App.jsx cuando la crees)
+  { icon: <Ticket size={20} />, label: 'Promociones', href: '/admin/promociones' },
   { icon: <Users size={20} />, label: 'Clientes', href: '/admin/clientes' }, // (Añade esta ruta en App.jsx cuando la crees)
   { icon: <BarChart3 size={20} />, label: 'Reportes', href: '/admin/reportes' }, // (Añade esta ruta en App.jsx cuando la crees)
   { icon: <Settings size={20} />, label: 'Configuración', href: '/admin/configuracion' }, // (Añade esta ruta en App.jsx cuando la crees)
