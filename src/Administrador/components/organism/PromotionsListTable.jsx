@@ -1,16 +1,13 @@
 import React from 'react';
-// Reutilizamos el Átomo de Botón y el Átomo de Badge
 import Button from '../atom/Button.jsx';
-import Badge from '../atom/Badge.jsx'; // Asegúrate de que la ruta a tu átomo Badge sea correcta
+import Badge from '../atom/Badge.jsx'; 
 
-// Datos simulados para la tabla de promociones
 const promotionsData = [
   { id: '#PROMO-001', codigo: 'GOLAZO10', usosDisponibles: 50, usosMaximos: 100, activa: true, fechaExp: '25-12-2025' },
   { id: '#PROMO-002', codigo: 'VERANO20', usosDisponibles: 10, usosMaximos: 10, activa: false, fechaExp: '31-08-2025' },
   { id: '#PROMO-003', codigo: 'NUEVOUSER', usosDisponibles: 999, usosMaximos: 1000, activa: true, fechaExp: 'N/A' },
 ];
 
-// Los nuevos encabezados que definiste
 const headers = [
   'ID PROMOCION', 
   'CODIGO', 
@@ -18,7 +15,7 @@ const headers = [
   'USOS MAXIMOS', 
   'ACTIVA', 
   'FECHA EXPIRACION',
-  'ACCIONES' // Añadí acciones
+  'ACCIONES' 
 ];
 
 /**
