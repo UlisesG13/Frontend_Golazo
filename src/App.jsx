@@ -5,6 +5,7 @@ import AdminDashboard from './Administrador/pages/AdminDashboard';
 import ProductManagementPage from './Administrador/pages/ProductManagement.jsx';
 import OrdersPage from './Administrador/pages/OrdersPage.jsx';
 import PromotionsPage from './Administrador/pages/PromotionsPage.jsx';  
+import ReportsPage from './Administrador/pages/ReportsPage.jsx'; // Nueva página de reportes
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
 
         {/* Ruta para la gestión de promociones */}
         <Route path="/admin/promociones" element={<PromotionsPage />} />
+
+        {/* Ruta para la página de reportes */}
+        <Route path="/admin/reportes" element={<ReportsPage />} /> {/* Nueva ruta */}
       </Routes>
     </BrowserRouter>
   );
