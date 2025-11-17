@@ -9,8 +9,7 @@ import {
   LogOut, 
   Ticket 
 } from 'lucide-react';
-// OJO: Revisa que esta ruta a tu logo sea correcta (vi 'Logos.jsx' en un error anterior)
-// --- CORREGIDO: Cambiado de 'Logo.jsx' a 'Logos.jsx' ---
+
 import Logo from '../atom/Logos.jsx'; 
 import SidebarLink from '../molecule/SidebarLink.jsx';
 
