@@ -1,5 +1,8 @@
-const NavLink = ({ children, href = "#" }) => (
-  <a href={href} className="text-white hover:text-gray-200 transition-colors text-sm font-medium">
+const NavLink = ({ children, href = "#", className = "" }) => (
+  <a 
+    href={href} 
+    className={`hover:text-gray-200 transition-colors text-sm font-medium ${className || 'text-white'}`}
+  >
     {children}
   </a>
 );
