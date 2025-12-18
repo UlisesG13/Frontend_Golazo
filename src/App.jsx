@@ -6,6 +6,7 @@ import ProductManagementPage from './Administrador/pages/ProductManagement.jsx';
 import OrdersPage from './Administrador/pages/OrdersPage.jsx';
 import PromotionsPage from './Administrador/pages/PromotionsPage.jsx';  
 import ReportsPage from './Administrador/pages/ReportsPage.jsx'; // Nueva página de reportes
+import ProductsPage from './Usuario/pages/ProductsPage.jsx';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
         {/* Ruta para la página de reportes */}
         <Route path="/admin/reportes" element={<ReportsPage />} /> {/* Nueva ruta */}
+
+        {/* Ruta para la página de productos del usuario */}
+        <Route path="/catalogo" element={<ProductsPage />} />
       </Routes>
     </BrowserRouter>
   );
