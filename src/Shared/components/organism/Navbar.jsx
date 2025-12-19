@@ -1,4 +1,4 @@
-import Logo from '../atom/logo'
+import Logo from '../atom/Logo'
 import NavLink from '../atom/Navbarlink'
 import IconButton from '../atom/IconButton'
 import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi'
@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center gap-6">
           <NavLink href="#">Home</NavLink>
           <NavLink href="#">Categorias</NavLink>
-          <NavLink href="#">Contact Us</NavLink>
+          <NavLink href="#">Contactanos</NavLink>
         </nav>
 
         <div className="flex items-center gap-2">

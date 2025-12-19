@@ -33,28 +33,12 @@ const CATEGORIES = [
     image: '/src/assets/img/negritocongorra.jpg',
     badge: '+'
   },
-  {
-    id: 7,
-    title: 'Pedidos Personalizados',
-    image: '/src/assets/img/negritocongorra.jpg',
-    badge: '+'
-  }
+
 ]
 
 const CategoryGrid = () => {
   return (
-    <div className="space-y-8">
-      {/* Search bar */}
-      <div className="relative">
-        <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-        <input
-          type="text"
-          placeholder="Search"
-          className="w-full pl-12 pr-4 py-3 rounded-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200"
-        />
-      </div>
 
-      {/* Categories grid */}
       <div className="grid grid-cols-12 gap-4">
         {/* Lista de categorías */}
         <div className="col-span-3 space-y-3">
@@ -72,7 +56,7 @@ const CategoryGrid = () => {
           ))}
           <button className="mt-4 flex items-center gap-2 text-sm font-medium text-black hover:text-gray-700 transition-colors">
             All Categories
-            <FiArrowRight className="w-4 h-4" />
+            <FiArrowRight className="w-4 h-9" />
           </button>
         </div>
 
@@ -83,7 +67,7 @@ const CategoryGrid = () => {
             <img
               src={CATEGORIES[0].image}
               alt={CATEGORIES[0].title}
-              className="w-full h-[300px] object-cover rounded-lg"
+              className="w-full h-[400px] object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <button className="bg-white px-6 py-2 rounded text-sm font-medium">
@@ -154,7 +138,6 @@ const CategoryGrid = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
