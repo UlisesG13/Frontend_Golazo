@@ -2,9 +2,8 @@ const Hero = () => {
   return (
     <section
       className="relative w-full min-h-screen overflow-hidden"
-      style={{ height: '100vh' }} // asegurar exactamente 100vh visual
+      style={{ height: '100vh' }}
     >
-      {/* Background image (Unsplash sports / tenis) */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
@@ -15,10 +14,8 @@ const Hero = () => {
         aria-hidden="true"
       />
 
-      {/* dark overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* centered content */}
       <div className="relative z-10 w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-white max-w-2xl text-center">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">

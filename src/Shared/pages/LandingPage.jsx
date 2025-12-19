@@ -3,6 +3,7 @@ import Hero from '../components/molecules/Hero'
 import CategoryGrid from '../components/molecules/CategoryGrid'
 import PopularProducts from '../components/organism/PopularProducts'
 import NewProducts from '../components/organism/NewProducts'
+import FinalSection from '../components/organism/FinalSection'
 
 const LandingPage = () => {
   return (
@@ -28,6 +29,9 @@ const LandingPage = () => {
 
       {/* Productos Nuevos */}
       <NewProducts />
+
+      {/* Sección final: beneficios, galería y footer */}
+      <FinalSection />
     </div>
   )
 }
